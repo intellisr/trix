@@ -17,6 +17,7 @@ public class Scheduledfairs extends AppCompatActivity {
     int fee;
     RadioGroup radioGroup;
     EditText noOftick;
+    EditText days;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,7 @@ public class Scheduledfairs extends AppCompatActivity {
         fromSpin.setAdapter(adapter2);
 
         noOftick=(EditText) findViewById(R.id.noTicket);
-        
+        days=(EditText)findViewById(R.id.days);
         
 
     }
@@ -61,10 +62,11 @@ public class Scheduledfairs extends AppCompatActivity {
         int tickets=Integer.parseInt(noOftick.getText().toString());
         int to=toSpin.getSelectedItemPosition();
         int from=fromSpin.getSelectedItemPosition();
+        int noDays=Integer.parseInt(days.getText().toString());
 
         int res=calculateFair(to,from);
 
-        int fair=res*tickets*selectedId;
+        int fair=res*tickets*selectedId*noDays;
 
         Toast.makeText(Scheduledfairs.this, "Your calculated fair is : "+fair,
                 Toast.LENGTH_LONG).show();

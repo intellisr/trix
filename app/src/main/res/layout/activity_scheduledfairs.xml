@@ -51,15 +51,15 @@
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="94dp"
-            android:layout_height="51dp"
+            android:layout_width="167dp"
+            android:layout_height="37dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="27dp"
-            android:layout_marginEnd="294dp"
-            android:layout_marginBottom="495dp"
-            android:text="Days :"
+            android:layout_marginEnd="217dp"
+            android:layout_marginBottom="508dp"
+            android:text="No of Days :"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold" />
@@ -203,17 +203,18 @@
                 app:srcCompat="@drawable/logo" />
         </RelativeLayout>
 
-        <Spinner
-            android:id="@+id/spinner4"
-            android:layout_width="255dp"
-            android:layout_height="43dp"
+        <EditText
+            android:id="@+id/days"
+            android:layout_width="151dp"
+            android:layout_height="39dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-
-            android:layout_marginStart="135dp"
+            android:inputType="number"
+            android:text="1"
+            android:layout_marginStart="240dp"
             android:layout_marginEnd="21dp"
-            android:layout_marginBottom="501dp" />
+            android:layout_marginBottom="505dp" />
 
     </RelativeLayout>
 </LinearLayout>

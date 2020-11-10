@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Reservation"
-    android:orientation="vertical">
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="92dp"
-        android:layout_weight="0.85"
-        android:background="@color/design_default_color_secondary_variant">
-
-        <ImageButton
-            android:id="@+id/imageButton10"
-            android:layout_width="95dp"
-            android:layout_height="88dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="11dp"
-            android:layout_marginBottom="9dp"
-            app:srcCompat="@drawable/menubttn1" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="144dp"
-            android:layout_height="94dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="7dp"
-            app:srcCompat="@drawable/logo" />
-    </RelativeLayout>
-    <RelativeLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="602dp"
-        android:layout_weight="0.15"
-        android:background=""
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="120dp">
-</LinearLayout>
+<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help_webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    />
