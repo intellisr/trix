@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TrixApp</string>
+
+    <string-array name="stations">
+        <item>None</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five or more</item>
+    </string-array>
+</resources>
+
