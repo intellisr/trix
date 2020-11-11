@@ -9,6 +9,6 @@ public class topupcard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_topupcard);
+        setContentView(R.layout.activity_accountdetails);
     }
 }

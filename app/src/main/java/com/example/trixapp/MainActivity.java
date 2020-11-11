@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
+    private Button button2;
     private EditText un;
     private EditText pw;
     public String username;
@@ -30,18 +31,29 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 username=un.getText().toString();
                 password=pw.getText().toString();
-
                 if(username.isEmpty() || password.isEmpty()){
-                    Toast.makeText(MainActivity.this, "Please Enter Un and PW to continue",
+                    Toast.makeText(MainActivity.this, "Please Enter UserName and Password to continue",
                             Toast.LENGTH_LONG).show();
                 }else {
                     openmenu();
                 }
             }
         });
+
+        button2 = (Button) findViewById(R.id.signUpbutton);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openReg();
+            }
+        });
     }
     public void openmenu(){
         Intent intent = new Intent(this, menu.class);
+        startActivity(intent);
+    }
+    public void openReg(){
+        Intent intent = new Intent(this, topupcard.class);
         startActivity(intent);
     }
 }

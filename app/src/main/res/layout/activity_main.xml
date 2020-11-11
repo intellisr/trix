@@ -8,22 +8,21 @@
     tools:context=".MainActivity">
 
 
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="367dp"
+        android:layout_height="352dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="194dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginBottom="447dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="453dp"
         app:srcCompat="@drawable/logo" />
 
-    <EditText
+    <TextView
         android:id="@+id/TrixApp"
         android:layout_width="289dp"
         android:layout_height="61dp"
@@ -31,7 +30,7 @@
         android:layout_marginStart="104dp"
         android:layout_marginTop="111dp"
         android:layout_marginEnd="104dp"
-        android:layout_marginBottom="695dp"
+        android:layout_marginBottom="836dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="    TrixApp"
@@ -40,32 +39,15 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="467dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginBottom="355dp"
-        android:background="@color/cardview_light_background"
-        android:drawableLeft="@drawable/ic_action_user"
-        android:ems="10"
-        android:hint="UserName"
-        android:inputType="textPersonName"
-        android:textSize="20dp" />
-
-    <EditText
         android:id="@+id/Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="553dp"
+        android:layout_marginTop="684dp"
         android:layout_marginEnd="104dp"
-        android:layout_marginBottom="269dp"
+        android:layout_marginBottom="138dp"
         android:background="@color/cardview_light_background"
         android:drawableLeft="@drawable/ic_action_lock"
         android:ems="10"
@@ -73,45 +55,42 @@
         android:inputType="textPassword"
         android:textSize="20dp" />
 
-    <androidx.cardview.widget.CardView
-
+    <EditText
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="632dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="193dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="24dp"
-        app:cardElevation="10dp">
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="553dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="270dp"
+        android:background="@color/cardview_light_background"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/signinbutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/cardview_dark_background"
-            android:text="Button" />
-    </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="136dp"
+    <Button
+        android:id="@+id/signinbutton"
+        android:layout_width="121dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="715dp"
-        android:layout_marginEnd="134dp"
-        android:layout_marginBottom="102dp"
-        android:text="Register Here"
-        android:textColor="@color/white"
-        android:textSize="17dp" />
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="119dp"
+        android:text="SignIn" />
+
+    <Button
+        android:id="@+id/signUpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="49dp"
+        android:text="Register here" />
 
 
 </RelativeLayout>

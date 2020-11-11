@@ -1,12 +1,15 @@
 package com.example.trixapp;
 
 
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.zxing.Result;
@@ -18,8 +21,9 @@ import androidmads.library.qrgenearator.QRGSaver;
 import androidx.appcompat.app.AppCompatActivity;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class Setting extends AppCompatActivity implements ZXingScannerView.ResultHandler{
-
+public class accountdetails extends AppCompatActivity implements ZXingScannerView.ResultHandler{
+    int fee;
+    int Toatalfee;
     private ZXingScannerView mScannerView;
     String inputValue;
     String savePath = Environment.getExternalStorageDirectory().getPath() + "/QRCode/";
@@ -47,17 +51,20 @@ public class Setting extends AppCompatActivity implements ZXingScannerView.Resul
         // Do something with the result here
         // Log.v("tag", rawResult.getText()); // Prints scan results
         // Log.v("tag", rawResult.getBarcodeFormat().toString()); // Prints the scan format (qrcode, pdf417 etc.)
-        Toast.makeText(Setting.this, rawResult.getText().toString(),
+        Toast.makeText(accountdetails.this, rawResult.getText().toString(),
                 Toast.LENGTH_LONG).show();
 
-        SharedPreferences sharePref= PreferenceManager.getDefaultSharedPreferences(Setting.this);
-        SharedPreferences.Editor editor = sharePref.edit();
-        editor.putString("start",rawResult.getText());
-        editor.apply();
+        SharedPreferences sharePref = PreferenceManager.getDefaultSharedPreferences(this);
+        String start = sharePref.getString("start",null);
+        String end = rawResult.getText();
 
+        Toatalfee=calculateFair(Integer.parseInt(start),Integer.parseInt(end));
 
-        String inputValue=rawResult.getText().toString();
-         qrgEncoder = new QRGEncoder(inputValue,null,QRGContents.Type.TEXT,50*50);
+        Toast.makeText(accountdetails.this,""+Toatalfee,
+                Toast.LENGTH_LONG).show();
+
+        String inputValue=start+"/"+end+"/"+Toatalfee;
+        qrgEncoder = new QRGEncoder(inputValue,null,QRGContents.Type.TEXT,50*50);
         try {
             bitmap = qrgEncoder.encodeAsBitmap();
         } catch (WriterException e) {
@@ -72,8 +79,28 @@ public class Setting extends AppCompatActivity implements ZXingScannerView.Resul
             e.printStackTrace();
         }
         //MainActivity.tvresult.setText(rawResult.getText());
-        onBackPressed();
+        Intent intent = new Intent(this, purchasedtikcet.class);
+        intent.putExtra("FEE", ""+Toatalfee);
+        intent.putExtra("s1", start);
+        intent.putExtra("s2", end);
+        startActivity(intent);
         // If you would like to resume scanning, call this method below:
         //mScannerView.resumeCameraPreview(this);
     }
-}
+
+    public int calculateFair(int Start,int End){
+        int sCount=Math.abs(End - Start);
+        if(sCount > 4 ){
+            fee=25;
+        }else if(sCount > 8){
+            fee=20;
+        }else{
+            fee=30;
+        }
+        int amount= sCount * fee;
+        int fair=(int)amount;
+        return fair;
+    }
+
+
+    }

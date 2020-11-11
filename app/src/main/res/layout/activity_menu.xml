@@ -15,13 +15,13 @@
         android:background="@color/design_default_color_secondary_variant">
 
         <ImageButton
-            android:id="@+id/imageButton10"
-            android:layout_width="85dp"
-            android:layout_height="73dp"
+            android:id="@+id/menu"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="14dp"
             app:srcCompat="@drawable/menubttn1" />
 
         <ImageView
@@ -39,20 +39,7 @@
         android:layout_height="602dp"
         android:layout_weight="0.15"
         tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="120dp"
-        android:background="">
-
-        <ImageButton
-            android:id="@+id/imageButton11"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="69dp"
-            android:layout_marginEnd="262dp"
-            android:layout_marginBottom="481dp"
-            app:srcCompat="@drawable/journeyplanner" />
+        tools:layout_editor_absoluteY="120dp">
 
         <TextView
             android:id="@+id/textView"
@@ -71,20 +58,6 @@
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/imageButton12"
-            android:layout_width="wrap_content"
-            android:layout_height="73dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="262dp"
-            android:layout_marginTop="51dp"
-            android:layout_marginEnd="80dp"
-            android:layout_marginBottom="484dp"
-            app:srcCompat="@drawable/schedulefairs" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -101,19 +74,6 @@
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/imageButton13"
-            android:layout_width="72dp"
-            android:layout_height="67dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="82dp"
-            android:layout_marginTop="201dp"
-            android:layout_marginEnd="257dp"
-            android:layout_marginBottom="341dp"
-            app:srcCompat="@drawable/reservation" />
 
         <TextView
             android:id="@+id/textView4"
@@ -122,28 +82,14 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="278dp"
-            android:layout_marginEnd="239dp"
-            android:layout_marginBottom="305dp"
+            android:layout_marginTop="549dp"
+            android:layout_marginEnd="232dp"
+            android:layout_marginBottom="35dp"
             android:text="Reservations"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/imageButton14"
-            android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="262dp"
-            android:layout_marginTop="198dp"
-            android:layout_marginEnd="80dp"
-            android:layout_marginBottom="341dp"
-            app:srcCompat="@drawable/timetable" />
 
         <TextView
             android:id="@+id/textView5"
@@ -152,59 +98,31 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="277dp"
-            android:layout_marginEnd="49dp"
-            android:layout_marginBottom="306dp"
+            android:layout_marginTop="549dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="34dp"
             android:text="Time Table"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/imageButton15"
-            android:layout_width="wrap_content"
-            android:layout_height="71dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="332dp"
-            android:layout_marginEnd="255dp"
-            android:layout_marginBottom="206dp"
-            app:srcCompat="@drawable/topupcard" />
-
-
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="99dp"
+            android:layout_width="wrap_content"
             android:layout_height="23dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="409dp"
-            android:layout_marginEnd="245dp"
-            android:layout_marginBottom="175dp"
-            android:text="Top Up Card"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="177dp"
+            android:text="Account details"
             android:textAlignment="center"
-            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="20dp"
-            android:textColor="@color/black"/>
+            android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/imageButton16"
-            android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="261dp"
-            android:layout_marginTop="336dp"
-            android:layout_marginEnd="75dp"
-            android:layout_marginBottom="203dp"
-            app:srcCompat="@drawable/checkbalance" />
 
         <TextView
             android:id="@+id/textView7"
@@ -213,15 +131,14 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="411dp"
-            android:layout_marginEnd="44dp"
-            android:layout_marginBottom="170dp"
-            android:text="Check Balance"
+            android:layout_marginTop="264dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="317dp"
+            android:text="Exit"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
-
 
         <TextView
             android:id="@+id/textView8"
@@ -230,24 +147,14 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="537dp"
-            android:layout_marginEnd="239dp"
-            android:layout_marginBottom="39dp"
-            android:text="Setting"
+            android:layout_marginTop="261dp"
+            android:layout_marginEnd="231dp"
+            android:layout_marginBottom="315dp"
+            android:text="Enter"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/imageButton18"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="74dp"
-            android:layout_marginBottom="75dp"
-            app:srcCompat="@drawable/contactus" />
 
         <TextView
             android:id="@+id/textView9"
@@ -256,10 +163,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="536dp"
-            android:layout_marginEnd="56dp"
-            android:layout_marginBottom="42dp"
-            android:text="Contact us"
+            android:layout_marginTop="405dp"
+            android:layout_marginEnd="239dp"
+            android:layout_marginBottom="173dp"
+            android:text="Scan me"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -271,9 +178,79 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="255dp"
-            android:layout_marginBottom="74dp"
-            app:srcCompat="@drawable/setting" />
+            android:layout_marginEnd="243dp"
+            android:layout_marginBottom="485dp"
+            app:srcCompat="@drawable/journey" />
+
+        <ImageButton
+            android:id="@+id/shedu"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="485dp"
+            app:srcCompat="@drawable/schedule1" />
+
+        <ImageButton
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="250dp"
+            android:layout_marginBottom="352dp"
+            app:srcCompat="@drawable/enter" />
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="350dp"
+            app:srcCompat="@drawable/exit" />
+
+        <ImageButton
+            android:id="@+id/qr"
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="246dp"
+            android:layout_marginBottom="205dp"
+            app:srcCompat="@drawable/qr" />
+
+        <ImageButton
+            android:id="@+id/topup"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="211dp"
+            app:srcCompat="@drawable/account" />
+
+        <ImageButton
+            android:id="@+id/resv"
+            android:layout_width="89dp"
+            android:layout_height="86dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="246dp"
+            android:layout_marginBottom="67dp"
+            app:srcCompat="@drawable/reservation1" />
+
+        <ImageButton
+            android:id="@+id/timet"
+            android:layout_width="71dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="72dp"
+            app:srcCompat="@drawable/timetable1" />
 
 
     </RelativeLayout>

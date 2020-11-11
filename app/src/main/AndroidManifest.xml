@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.trixapp">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,7 +18,7 @@
         <activity android:name=".purchasedtikcet" />
         <activity android:name=".Contactus" />
         <activity android:name=".Setting" />
-        <activity android:name=".Checkbalance" />
+        <activity android:name=".accountdetails" />
         <activity android:name=".topupcard" />
         <activity android:name=".Scheduledfairs" />
         <activity android:name=".journeyplanner" />

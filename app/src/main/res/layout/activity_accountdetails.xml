@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Checkbalance"
+    tools:context=".accountdetails"
     android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -35,7 +35,6 @@
         android:layout_width="match_parent"
         android:layout_height="602dp"
         android:layout_weight="0.85"
-        android:background=""
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="120dp">
 
@@ -59,14 +58,15 @@
             android:layout_marginEnd="13dp"
             android:layout_marginBottom="386dp"
             android:text="Check" />
+
         <TextView
             android:id="@+id/textView19"
             android:layout_width="384dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="255dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="229dp"
             android:text="Fields marks with an (*) are required "
             android:textColor="@color/black"
             android:textSize="22dp"
@@ -80,7 +80,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="68dp"
             android:layout_marginBottom="551dp"
-            android:text="Check Balance"
+            android:text="Account Details"
             android:textColor="@color/black"
             android:textSize="32dp"
             android:textStyle="bold" />

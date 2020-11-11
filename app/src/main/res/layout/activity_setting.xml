@@ -5,5 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Setting">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="602dp"
+        android:layout_weight="0.15"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="120dp">>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp"
+            android:text="Scan Barcode or QR code" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_weight="0.85"
+        android:background="@color/design_default_color_secondary_variant">>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="144dp"
+            android:layout_height="94dp"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="95dp"
+            android:layout_height="88dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/menubttn1" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="329dp"
+        android:text="Result will be here"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

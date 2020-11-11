@@ -2,6 +2,7 @@ package com.example.trixapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -68,7 +69,11 @@ public class Scheduledfairs extends AppCompatActivity {
 
         int fair=res*tickets*selectedId*noDays;
 
-        Toast.makeText(Scheduledfairs.this, "Your calculated fair is : "+fair,
-                Toast.LENGTH_LONG).show();
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(Scheduledfairs.this);
+        builder.setMessage("Fee:"+fair)
+                .setTitle("From Station "+to+" to "+"Station "+from);
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }
