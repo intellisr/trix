@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Scheduledfairs">
+    tools:context=".Scheduledfairs"
+    android:background="@drawable/backgrnd">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,66 +15,46 @@
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="120dp">
 
-        <EditText
-            android:id="@+id/noTicket"
-            android:layout_width="161dp"
-            android:layout_height="44dp"
-            android:inputType="number"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="215dp"
-            android:layout_marginEnd="35dp"
-            android:layout_marginBottom="190dp" />
-
-        <Spinner
-            android:id="@+id/to"
-            android:layout_width="255dp"
-            android:layout_height="43dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="135dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="362dp" />
-
-        <Spinner
-            android:id="@+id/from"
-            android:layout_width="255dp"
-            android:layout_height="43dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="137dp"
-            android:layout_marginEnd="18dp"
-            android:layout_marginBottom="433dp" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="167dp"
-            android:layout_height="37dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginEnd="217dp"
-            android:layout_marginBottom="508dp"
-            android:text="No of Days :"
-            android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="54dp"
-            android:layout_marginBottom="39dp"
-            android:onClick="purchase"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="66dp"
             android:background="@color/design_default_color_secondary_variant"
-            android:text="Purchase" />
+            android:onClick="purchase"
+            android:text="Purchase"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/noTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="345dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="169dp"
+            android:background="@color/white"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="308dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="603dp"
+            android:background="@color/white"
+            android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"/>
 
         <RadioGroup
             android:id="@+id/rdGroup"
@@ -88,97 +69,37 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2" >
+                android:layout_weight="2">
 
-            <RadioButton
-                android:id="@+id/oneway"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:text="Return"
-                android:textColor="@color/black"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+                <RadioButton
+                    android:id="@+id/oneway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:text="Return"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
 
-            <RadioButton
-                android:id="@+id/returnway"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="70dp"
-                android:text="One way"
-                android:textColor="@color/black"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+                <RadioButton
+                    android:id="@+id/returnway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:text="One way"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
         </RadioGroup>
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="94dp"
-            android:layout_height="51dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="295dp"
-            android:layout_marginBottom="431dp"
-            android:text="From :"
-            android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="72dp"
-            android:layout_height="54dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="31dp"
-            android:layout_marginEnd="312dp"
-            android:layout_marginBottom="356dp"
-            android:text="To :"
-            android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="158dp"
-            android:layout_height="49dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="31dp"
-            android:layout_marginEnd="222dp"
-            android:layout_marginBottom="184dp"
-            android:text="Nu of tickets"
-            android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="358dp"
-            android:layout_height="49dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginBottom="572dp"
-            android:text="Scheduled Fairs"
-            android:textColor="@color/black"
-            android:textSize="32dp"
-            android:textStyle="bold" />
-
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="92dp"
+            android:layout_height="116dp"
             android:layout_weight="0.85"
-            android:background="@color/design_default_color_secondary_variant">
+            android:background="@color/black">
 
             <ImageButton
                 android:id="@+id/imageButton10"
@@ -199,18 +120,104 @@
                 app:srcCompat="@drawable/logo" />
         </RelativeLayout>
 
-        <EditText
-            android:id="@+id/days"
-            android:layout_width="151dp"
-            android:layout_height="39dp"
+        <Spinner
+            android:id="@+id/to"
+            android:layout_width="277dp"
+            android:layout_height="55dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:inputType="number"
-            android:text="1"
-            android:layout_marginStart="240dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginBottom="505dp" />
+            android:layout_marginStart="302dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="405dp"
+            android:background="@color/white" />
+
+        <Spinner
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="313dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="508dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="227dp"
+            android:layout_marginBottom="596dp"
+            android:text="No of Days :"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="94dp"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="296dp"
+            android:layout_marginBottom="509dp"
+            android:text="From :"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="72dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="324dp"
+            android:layout_marginBottom="412dp"
+            android:text="To :"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginEnd="222dp"
+            android:layout_marginBottom="184dp"
+            android:text="Nu of tickets :"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="424dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginBottom="731dp"
+            android:text="Scheduled Fairs"
+            android:textColor="@color/white"
+            android:textSize="55dp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 </LinearLayout>

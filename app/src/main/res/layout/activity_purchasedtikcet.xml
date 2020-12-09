@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:visibility="visible"
-    tools:context=".purchasedtikcet">
+    tools:context=".purchasedtikcet"
+    tools:visibility="visible"
+    android:background="@drawable/backgrnd">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,26 +17,37 @@
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="120dp">
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="21dp"
+            android:text="Purchased"
+            android:textSize="30dp" />
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="92dp"
+            android:layout_height="121dp"
             android:layout_weight="0.85"
-            android:background="@color/design_default_color_secondary_variant">
+            android:background="@color/black">
 
             <ImageButton
                 android:id="@+id/imageButton10"
-                android:layout_width="95dp"
-                android:layout_height="88dp"
+                android:layout_width="102dp"
+                android:layout_height="100dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="11dp"
-                android:layout_marginBottom="9dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="11dp"
                 app:srcCompat="@drawable/menubttn1" />
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="144dp"
-                android:layout_height="94dp"
+                android:layout_width="146dp"
+                android:layout_height="105dp"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="7dp"
                 app:srcCompat="@drawable/logo" />
@@ -46,9 +59,9 @@
             android:layout_height="39dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="277dp"
-            android:text="TextView" />
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="356dp"
+            android:background="@color/white"/>
 
         <TextView
             android:id="@+id/destination"
@@ -56,9 +69,9 @@
             android:layout_height="39dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="396dp"
-            android:text="TextView" />
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="535dp"
+            android:background="@color/white"/>
 
         <TextView
             android:id="@+id/nu_of_ticket"
@@ -66,9 +79,9 @@
             android:layout_height="39dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="334dp"
-            android:text="TextView" />
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="444dp"
+            android:background="@color/white"/>
 
         <TextView
             android:id="@+id/final_amount"
@@ -76,9 +89,9 @@
             android:layout_height="39dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="212dp"
-            android:text="TextView" />
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="259dp"
+            android:background="@color/white"/>
 
         <TextView
             android:id="@+id/textView27"
@@ -86,9 +99,9 @@
             android:layout_height="39dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="36dp"
             android:layout_marginBottom="150dp"
-            android:text="TextView" />
+            android:background="@color/white"/>
 
         <TextView
             android:id="@+id/textView22"
@@ -97,42 +110,27 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginEnd="232dp"
-            android:layout_marginBottom="147dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="231dp"
+            android:layout_marginBottom="248dp"
             android:text="Platform nu :"
-            android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textSize="40dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView21"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView20"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="258dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="5dp"
-            android:text="Scan me"
-            android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="italic" />
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="156dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginStart="29dp"
-            android:layout_marginEnd="230dp"
-            android:layout_marginBottom="208dp"
+            android:layout_marginEnd="322dp"
+            android:layout_marginBottom="366dp"
             android:text="Price :"
-            android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textSize="40dp"
             android:textStyle="bold" />
 
         <TextView
@@ -142,12 +140,12 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="31dp"
-            android:layout_marginEnd="228dp"
-            android:layout_marginBottom="273dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="231dp"
+            android:layout_marginBottom="149dp"
             android:text="Class :"
-            android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textSize="40dp"
             android:textStyle="bold" />
 
         <TextView
@@ -158,11 +156,11 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="29dp"
-            android:layout_marginEnd="292dp"
-            android:layout_marginBottom="453dp"
+            android:layout_marginEnd="293dp"
+            android:layout_marginBottom="624dp"
             android:text="From :"
-            android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textSize="40dp"
             android:textStyle="bold" />
 
         <TextView
@@ -173,41 +171,41 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="29dp"
-            android:layout_marginEnd="313dp"
-            android:layout_marginBottom="387dp"
+            android:layout_marginEnd="314dp"
+            android:layout_marginBottom="535dp"
             android:text="To :"
-            android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textSize="40dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView13"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="321dp"
+            android:layout_marginBottom="454dp"
+            android:text="Nu of tickets :"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="220dp"
-            android:layout_marginBottom="340dp"
-            android:text="Nu of tickets :"
-            android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="358dp"
-            android:layout_height="49dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="37dp"
-            android:layout_marginBottom="771dp"
+            android:layout_marginBottom="746dp"
             android:text="Purchased Ticket/s"
-            android:textColor="@color/black"
-            android:textSize="32dp"
+            android:textColor="@color/white"
+            android:textSize="55dp"
             android:textStyle="bold" />
 
         <TextView
@@ -216,10 +214,11 @@
             android:layout_height="39dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="458dp"
-            android:text="TextView"
-            android:visibility="visible" />
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="632dp"
+
+            android:visibility="visible"
+            android:background="@color/white"/>
 
     </RelativeLayout>
 

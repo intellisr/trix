@@ -6,32 +6,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".menu"
-    android:backgroundTintMode="multiply">
+    android:backgroundTintMode="multiply"
+    android:background="@drawable/backgrnd">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="92dp"
-        android:layout_weight="0.85"
-        android:background="@color/design_default_color_secondary_variant">
+        android:layout_width="622dp"
+        android:layout_height="147dp"
+        android:layout_weight="0."
+        android:background="@color/black">
 
         <ImageButton
             android:id="@+id/menu"
-            android:layout_width="83dp"
-            android:layout_height="83dp"
+            android:layout_width="160dp"
+            android:layout_height="136dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="8dp"
             app:srcCompat="@drawable/menubttn1" />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="144dp"
-            android:layout_height="94dp"
+            android:layout_width="207dp"
+            android:layout_height="168dp"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="7dp"
-            app:srcCompat="@drawable/logo"
-            />
+            android:layout_marginEnd="401dp"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/logo" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -41,21 +43,22 @@
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="120dp">
 
+
         <TextView
             android:id="@+id/textView"
-            android:layout_width="178dp"
-            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"
-            android:layout_marginTop="130dp"
-            android:layout_marginEnd="202dp"
-            android:layout_marginBottom="449dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="333dp"
+            android:layout_marginBottom="711dp"
             android:text="Journey Planner"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <TextView
@@ -65,191 +68,189 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="129dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginBottom="450dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginBottom="525dp"
             android:text="Scheduled fairs"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
             android:textStyle="bold" />
-
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
+            android:layout_height="42dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="549dp"
-            android:layout_marginEnd="232dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginTop="607dp"
+            android:layout_marginEnd="361dp"
+            android:layout_marginBottom="164dp"
             android:text="Reservations"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="130dp"
-            android:layout_height="25dp"
+            android:layout_width="198dp"
+            android:layout_height="38dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="549dp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginBottom="34dp"
+            android:layout_marginTop="612dp"
+            android:layout_marginEnd="79dp"
+            android:layout_marginBottom="164dp"
             android:text="Time Table"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="23dp"
+            android:layout_width="241dp"
+            android:layout_height="49dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="409dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="177dp"
+            android:layout_marginTop="427dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="337dp"
             android:text="Account details"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
             android:textStyle="bold" />
-
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="145dp"
-            android:layout_height="27dp"
+            android:layout_width="144dp"
+            android:layout_height="40dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="264dp"
-            android:layout_marginEnd="39dp"
-            android:layout_marginBottom="317dp"
+            android:layout_marginTop="237dp"
+            android:layout_marginEnd="111dp"
+            android:layout_marginBottom="537dp"
             android:text="Exit"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="110dp"
-            android:layout_height="32dp"
+            android:layout_width="103dp"
+            android:layout_height="43dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="261dp"
-            android:layout_marginEnd="231dp"
-            android:layout_marginBottom="315dp"
+            android:layout_marginTop="236dp"
+            android:layout_marginEnd="404dp"
+            android:layout_marginBottom="534dp"
             android:text="Enter"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="112dp"
-            android:layout_height="30dp"
+            android:layout_width="119dp"
+            android:layout_height="33dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="405dp"
-            android:layout_marginEnd="239dp"
-            android:layout_marginBottom="173dp"
+            android:layout_marginTop="423dp"
+            android:layout_marginEnd="397dp"
+            android:layout_marginBottom="357dp"
             android:text="Scan me"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="117dp"
+            android:layout_height="110dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="243dp"
-            android:layout_marginBottom="485dp"
+            android:layout_marginEnd="395dp"
+            android:layout_marginBottom="597dp"
             app:srcCompat="@drawable/journey" />
 
         <ImageButton
             android:id="@+id/shedu"
-            android:layout_width="wrap_content"
-            android:layout_height="88dp"
+            android:layout_width="134dp"
+            android:layout_height="121dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="73dp"
-            android:layout_marginBottom="485dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginBottom="585dp"
             app:srcCompat="@drawable/schedule1" />
 
         <ImageButton
             android:id="@+id/scan"
-            android:layout_width="wrap_content"
-            android:layout_height="88dp"
+            android:layout_width="127dp"
+            android:layout_height="132dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="250dp"
-            android:layout_marginBottom="352dp"
+            android:layout_marginEnd="385dp"
+            android:layout_marginBottom="395dp"
             app:srcCompat="@drawable/enter" />
 
         <ImageButton
             android:id="@+id/exit"
-            android:layout_width="wrap_content"
-            android:layout_height="93dp"
+            android:layout_width="136dp"
+            android:layout_height="125dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="71dp"
-            android:layout_marginBottom="350dp"
+            android:layout_marginEnd="107dp"
+            android:layout_marginBottom="401dp"
             app:srcCompat="@drawable/exit" />
 
         <ImageButton
             android:id="@+id/qr"
-            android:layout_width="wrap_content"
-            android:layout_height="93dp"
+            android:layout_width="122dp"
+            android:layout_height="127dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="246dp"
-            android:layout_marginBottom="205dp"
+            android:layout_marginEnd="393dp"
+            android:layout_marginBottom="216dp"
             app:srcCompat="@drawable/qr" />
 
         <ImageButton
             android:id="@+id/topup"
-            android:layout_width="wrap_content"
-            android:layout_height="87dp"
+            android:layout_width="133dp"
+            android:layout_height="117dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="68dp"
-            android:layout_marginBottom="211dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="221dp"
             app:srcCompat="@drawable/account" />
 
         <ImageButton
             android:id="@+id/resv"
-            android:layout_width="89dp"
-            android:layout_height="86dp"
+            android:layout_width="126dp"
+            android:layout_height="129dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="246dp"
-            android:layout_marginBottom="67dp"
+            android:layout_marginEnd="387dp"
+            android:layout_marginBottom="38dp"
             app:srcCompat="@drawable/reservation1" />
 
         <ImageButton
             android:id="@+id/timet"
-            android:layout_width="71dp"
-            android:layout_height="75dp"
+            android:layout_width="140dp"
+            android:layout_height="128dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="75dp"
-            android:layout_marginBottom="72dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginBottom="35dp"
             app:srcCompat="@drawable/timetable1" />
 
 

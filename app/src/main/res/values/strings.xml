@@ -2,12 +2,23 @@
     <string name="app_name">TrixApp</string>
 
     <string-array name="stations">
-        <item>b     e</item>
-        <item>One</item>
-        <item>Two</item>
-        <item>Three</item>
-        <item>Four</item>
-        <item>Five or more</item>
+        <item>Beliatta</item>
+        <item>Matara</item>
+        <item>Weligama</item>
+        <item>Ahangama</item>
+        <item>Galle</item>
+        <item>Ambalangoda</item>
+        <item>Hikkaduwa</item>
+        <item>Benthota</item>
+        <item>Aluthgama</item>
+        <item>Kaluthara</item>
+        <item>Panadura</item>
+        <item>Moratuwa</item>
+        <item>Dehiwala</item>
+        <item>Galkissa</item>
+        <item>Wellawatta</item>
+        <item>Fort</item>
+        <item>Maradana</item>
     </string-array>
 </resources>
 
